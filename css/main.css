@@ -111,8 +111,8 @@ main { display: block; min-height: 60vh; padding-block: var(--s6) var(--s9); }
 .anchor-marker[hidden] { display: none; }
 .anchor-marker .anchor-text { font-size: .75rem; color: var(--ink-soft); white-space: nowrap; }
 .anchor-marker .anchor-dot {
-  width: 8px; height: 6px; flex: 0 0 8px;
-  font-family: var(--font-sans); font-size: 7px; line-height: 6px; text-align: center; color: var(--gold);
+  width: 6px; height: 6px; flex: 0 0 6px;
+  font-family: var(--font-sans); font-size: 6px; line-height: 6px; text-align: center; color: var(--gold);
 }
 .anchor-marker.is-suppressed { visibility: hidden; }
 .dot-legend { display: flex; flex-wrap: wrap; gap: var(--s4); margin: 0 0 var(--s3); font-family: var(--font-sans); font-size: .75rem; color: var(--ink-soft); }
