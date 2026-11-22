@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="世界艺术史数字博物馆：以内容为先的全球艺术史阅读——史前艺术十二章、十九件作品档案、十一个创作者档案与五组跨文明比较。">
+<title>世界艺术史 · A World History of Art</title>
+<link rel="stylesheet" href="css/tokens.css">
+<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<a class="skip-link" href="#main">跳到正文</a>
+
+<div class="progress-track" id="progress-track" aria-hidden="true"><div class="progress-fill" id="progress-fill"></div></div>
+
+<header class="site-header">
+  <div class="header-inner container">
+    <button id="nav-toggle" class="header-btn" type="button" aria-expanded="false" aria-controls="site-drawer">导航</button>
+    <a class="brand" href="#/"><span>世界艺术史</span><small>A World History of Art</small></a>
+    <button id="search-toggle" class="header-btn" type="button" aria-expanded="false" aria-controls="search-panel">搜索</button>
+  </div>
+  <div class="search-panel" id="search-panel" hidden>
+    <div class="container search-inner">
+      <label class="sr-only" for="search-input">搜索作品、章节、创作者、比较与来源</label>
+      <input id="search-input" type="search" placeholder="搜索作品、章节、创作者、比较与来源…" autocomplete="off" spellcheck="false">
+      <button id="search-close" class="text-btn" type="button">关闭</button>
+    </div>
+    <div class="container search-results" id="search-results" aria-live="polite"></div>
+    <p class="container search-hint">按 / 或 Ctrl / ⌘ + K 聚焦；↑ ↓ 选择，Enter 打开，Esc 关闭。不保存搜索历史。</p>
+  </div>
+</header>
+
+<main id="main" tabindex="-1"></main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p class="footer-privacy">收藏、最近阅读和阅读位置只保存在你当前这台设备的浏览器里，不会上传，也没有账号。清除浏览器数据会一并删除。</p>
+    <nav class="footer-links" aria-label="页脚导航">
+      <a href="#/">首页</a>
+      <a href="#/period/prehistoric">史前艺术</a>
+      <a href="#/works">作品档案</a>
+      <a href="#/creators">创作者档案</a>
+      <a href="#/comparisons">比较研究</a>
+      <a href="#/book">原著目录</a>
+      <a href="#/civilizations">文明索引</a>
+      <a href="#/sources">资料来源</a>
+      <a href="#/atlas">分布与年表</a>
+      <a href="#/library">我的阅读</a>
+    </nav>
+    <p class="footer-colophon">正文与作品分析为网页补充内容，依据文末公开资料撰写；原著目录取自用户提供的中文版 PDF 书签。</p>
+  </div>
+</footer>
+
+<div class="mobile-toolbar" id="mobile-toolbar">
+  <button type="button" data-tool="toc">本篇目录</button>
+  <button type="button" data-tool="bookmark">收藏</button>
+  <button type="button" data-tool="top">↑顶部</button>
+</div>
+
+<aside class="drawer" id="site-drawer" hidden aria-label="全站导航抽屉"></aside>
+<div id="sheet-root"></div>
+<div id="dialog-root"></div>
+<div id="lightbox-root"></div>
+<div id="restore-root"></div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="js/data/book.js"></script>
+<script src="js/data/index.js"></script>
+<script src="js/data/prehistoric.js"></script>
+<script src="js/data/prehistoric-archive.js"></script>
+<script src="js/store.js"></script>
+<script src="js/views.js"></script>
+<script src="js/map.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
