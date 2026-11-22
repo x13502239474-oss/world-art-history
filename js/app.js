@@ -894,7 +894,8 @@
 
   function onScroll() {
     updateProgress();
-    if (state.restoreNotice && Math.abs(window.scrollY - state.restoreBaseline) > 24) {
+    if (state.restoreNotice && !state.restoreHover && !state.restoreNotice.contains(document.activeElement) &&
+      Math.abs(window.scrollY - state.restoreBaseline) > 24) {
       dismissRestoreNotice({ immediate: true });
     }
     if (state.path === '/period/prehistoric') schedulePositionWrite();
